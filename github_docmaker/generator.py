@@ -25,7 +25,8 @@ def generate_docs(repo_url: str, output_path: str, log_s3: str | None, dry_run: 
     5 - Usage
     6 - Customization
     7 - Explain the code logic and globally what part of the logic is defined where
-    9 - Potential disclaimers
+    8 - Potential disclaimers
+    9 - Repository File Structure
 
     Always Include repo structure (the tree) at the end of the output :
     {repo_tree}
