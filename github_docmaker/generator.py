@@ -41,7 +41,7 @@ def generate_docs(repo_url: str, output_path: str, log_s3: str | None, dry_run: 
     native_request = {
         "prompt": prompt,
         "max_tokens": 4096,
-        "temperature": 0.8,
+        "temperature": 0.2,
     }
     
     # Convert the native request to JSON.
