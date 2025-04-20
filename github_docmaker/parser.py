@@ -7,17 +7,15 @@ CODE_EXTENSIONS = [".py", ".js", ".ts", ".java", ".cpp", ".c", ".cs", ".rb", ".g
 # Markdown and general text files
 TEXT_EXTENSIONS = [".md", ".txt"]
 
-def should_include(file: str, only_code: bool) -> bool:
-    if only_code:
-        return any(file.endswith(ext) for ext in CODE_EXTENSIONS)
-    return any(file.endswith(ext) for ext in (CODE_EXTENSIONS + TEXT_EXTENSIONS))
+def should_include(file: str) -> bool:
+    return any(file.endswith(ext) for ext in (CODE_EXTENSIONS))
 
-def load_text_files(repo_path: str, only_code: bool) -> List[str]:
+def load_text_files(repo_path: str) -> List[str]:
     collected = []
 
     for root, _, files in os.walk(repo_path):
         for file in files:
-            if should_include(file, only_code):
+            if should_include(file):
                 full_path = os.path.join(root, file)
                 try:
                     with open(full_path, "r", encoding="utf-8") as f:
@@ -28,11 +26,10 @@ def load_text_files(repo_path: str, only_code: bool) -> List[str]:
                     print(f"Warning: skipping {full_path} due to error: {e}")
     return collected
 
-def parse_files(repo_path: str, only_code: bool = False) -> str:
-    files = load_text_files(repo_path, only_code=only_code)
+def parse_files(repo_path: str) -> str:
+    files = load_text_files(repo_path)
     full_text = "\n\n".join(files)
 
-    # Smart chunking with LangChain
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=2000,
         chunk_overlap=200,
