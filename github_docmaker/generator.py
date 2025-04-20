@@ -20,12 +20,12 @@ def generate_docs(repo_url: str, output_path: str, log_s3: str | None, dry_run: 
     0 - Introduction
     1 - list all features and tackle what can be customized
     2 - Prerequisites
-    3 - What are the Dependencies for running the project
     3 - Installation (if the setup file doesn't contain a package name then most likely the method to install is to clone the repo and run the setup file, in case you need it here is the repo link: {repo_url})
-    4 - Usage
-    7 - Customization
-    5 - Explain the code logic and globally what part of the logic is defined where
-    6 - Potential disclaimers
+    4 - What are the Dependencies for running the project
+    5 - Usage
+    6 - Customization
+    7 - Explain the code logic and globally what part of the logic is defined where
+    9 - Potential disclaimers
 
     Always Include repo structure (the tree) at the end of the output :
     {repo_tree}
