@@ -45,14 +45,13 @@ pip install .
 To use GitHub DocMaker, run the following command:
 
 ```bash
-gm-doc generate --repo <REPO_URL> [--output <OUTPUT_PATH>] [--log-s3 <S3_URI>] [--dry-run] [--only-code]
+gm-doc generate --repo <REPO_URL> [--output <OUTPUT_PATH>] [--log-s3 <S3_URI>] [--dry-run]
 ```
 
 - `--repo`: The URL or path to the GitHub repository.
 - `--output`: The output file path (default: `README.md`).
 - `--log-s3`: The S3 URI for logs (e.g., `s3://bucket/`).
 - `--dry-run`: Prints the output to the console without writing to a file.
-- `--only-code`: Parses only code files and skips READMEs.
 
 ## Customization
 
