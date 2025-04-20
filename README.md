@@ -4,10 +4,10 @@ GitHub DocMaker is a command-line interface (CLI) tool designed to generate READ
 
 ## Features
 
-- Parses code and text files from a GitHub repository.
-- Generates documentation in Markdown format.
-- Supports customization options for parsing specific file types.
-- Uploads logs to an S3 bucket for auditing and debugging purposes.
+- Generates a tree of the files in the repository.
+- Pull and parses code files from a GitHub repository, to split them into chuncks for model consumption.
+- Generates documentation in Markdown format at a specified location on current device or S3 Bucket.
+- Possibility to uploads logs to an S3 bucket for auditing and debugging purposes.
 - Supports dry-run mode for testing and debugging.
 
 ## Prerequisites
