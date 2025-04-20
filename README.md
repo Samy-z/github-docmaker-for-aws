@@ -45,7 +45,7 @@ pip install -r requirements.txt
 To use GitHub DocMaker, run the following command:
 
 ```bash
-gm-doc generate --repo <REPO_URL> [--output <OUTPUT_PATH>] [--log-s3 <S3_URI>] [--dry-run]
+gen-doc generate --repo <REPO_URL> [--output <OUTPUT_PATH>] [--log-s3 <S3_URI>] [--dry-run]
 ```
 
 - `--repo`: The URL or path to the GitHub repository.
