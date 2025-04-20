@@ -16,6 +16,16 @@ GitHub DocMaker is a command-line interface (CLI) tool designed to generate READ
 - A GitHub account with access to the desired repository
 - An AWS account with access to the Mistral AI model (access to self-grant on Bedrock) and S3 (if using log uploads)
 
+## Installation
+
+To install GitHub DocMaker, you can clone the repository and install it using pip:
+
+```bash
+git clone https://github.com/Samy-z/github-docmaker-for-aws.git
+cd github-docmaker-for-aws
+pip install .
+```
+
 ## Dependencies
 
 This project requires the following dependencies:
@@ -28,16 +38,6 @@ These dependencies can be installed using pip by running:
 
 ```bash
 pip install -r requirements.txt
-```
-
-## Installation
-
-To install GitHub DocMaker, you can clone the repository and install it using pip:
-
-```bash
-git clone https://github.com/Samy-z/github-docmaker-for-aws.git
-cd github-docmaker-for-aws
-pip install .
 ```
 
 ## Usage
