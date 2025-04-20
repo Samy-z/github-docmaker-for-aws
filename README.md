@@ -1,6 +1,3 @@
-
-    --------------------------------------------------------------------------------
-
 # GitHub DocMaker
 
 GitHub DocMaker is a command-line interface (CLI) tool designed to generate documentation from GitHub repositories using the Mistral AI model via AWS. This tool is intended to help developers quickly create and maintain high-quality documentation for their projects.
@@ -17,7 +14,7 @@ GitHub DocMaker is a command-line interface (CLI) tool designed to generate docu
 
 - Python 3.9 or higher
 - A GitHub account with access to the desired repository
-- An AWS account with access to the Mistral AI model and S3 (if using log uploads)
+- An AWS account with access to the Mistral AI model (access to self-grant on Bedrock) and S3 (if using log uploads)
 
 ## Dependencies
 
